@@ -19,3 +19,24 @@
     align-items: center;
     position: relative;
 }
+#profile{
+    margin-left: 15em;
+    margin-top: 3em;
+    align-items: center;
+}
+
+
+#main_body{
+    margin:5em 8em;
+    padding-right: 2em;
+}
+
+#header{
+    margin-left: 5em;
+}
+h3{
+    padding: 1em 0em;
+}
+p{
+    padding-left: 1em;
+}
