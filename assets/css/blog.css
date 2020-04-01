@@ -2,23 +2,7 @@
     color: brown;
 }
 
-#img_container .card-img{
-    max-width: 12em;
-    height: auto;
-    filter:  saturate(0);
-    text-align: center;
-    border-radius: 15%;
-}
-#img_container .card-img:hover{
-    filter: none;
-    
-    transform: scale(1.1);
-}
-#img_container{
-    margin-top: 3em;
-    align-items: center;
-    position: relative;
-}
+
 #profile{
     margin-left: 15em;
     margin-top: 3em;
