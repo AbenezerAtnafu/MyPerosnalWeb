@@ -2,10 +2,22 @@
     margin: 0;
     padding: 0;
 }
+*::after {
+    box-sizing: border-box;
+}
+
+.body{
+    background-color:#F0F7FA;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 
 .basic_title {
     background: linear-gradient(-90deg, white, gray);
     padding: 0.5em;
+}
+
+#navbar-main{
+    background-color: #F0F7FA;
 }
 
 #navbar-main ul {
@@ -14,13 +26,50 @@
     font-size: 1.2em;
 }
 
-#navbar-main ul li {
-    border-bottom: dotted gray 2px;
-
+#navbar-main ul li a:hover {
+    color: #06805e;
 }
 
-#navbar-main ul li a:hover {
-    color: black;
+.nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: rgba(23,42,58,.85);
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+  }
+
+.nav-link:hover {
+    opacity: 1;
+  }
+.nav-link::before {
+    transition: all .5s;
+    height: 2px;
+    content: "";
+    position: absolute;
+    background-color: #06805e;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+a {
+    margin: 0;
+    color: #06805e;
+    text-decoration: none;
+    transition: color .6s ease;
+}
+ a:hover {
+    color: #06805e;
+    text-decoration: none;
+    transition: color .6s ease;
 }
 
 dl {
@@ -32,7 +81,7 @@ dt {
 }
 
 dd {
-    border-bottom: 0.5px solid gray;
+    
     padding: 10px 10px;
 }
 
@@ -59,7 +108,27 @@ a {
 
 
 #img_container {
-    margin-top: 3em;
+    
     align-items: center;
     position: relative;
+}
+
+.site-footer{
+    margin: auto;
+    padding: 10rem 0 0 0;
+    width: 60%;
+}
+
+.btn .btn-outline-primary{
+    cursor: pointer;
+    font-family: Lora;
+    text-transform: lowercase;
+    font-style: italic;
+    border-radius: 0;
+    color: #06805e;
+    border-color: #06805e;
+}
+
+.btn .btn-outline-primary:hover{
+    background-color: #06805e;
 }

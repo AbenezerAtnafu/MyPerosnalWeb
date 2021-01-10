@@ -10,36 +10,39 @@
     <link rel="stylesheet" href="./assets/css/blog.css">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
+<body class="body">
 
-    <nav id="navbar-main" class=" navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav id="navbar-main" class=" navbar navbar-expand-md navbar-light sticky-top">
 
-        <div class="collapse navbar-collapse" id="colNav">
-            <a class="text-dark ml-5 text-uppercase font-weight-bolder border-bottom" href="./index.html">Abenezer Atnafu</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <ul class="navbar-nav ml-auto nav-pills">
-                <li class="nav-item navbar-text active">
-                    <a href="./blog.html" class="nav-link">Blog</a>
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="text-dark ml-5 text-uppercase font-weight-bolder border-bottom" href="./index.html">Abenezer
+                Atnafu</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-text">
+                    <a href="./about.html" class="nav-link nav-link-ltr"><span>About</span></a>
                 </li>
                 <li class="nav-item navbar-text">
-                    <a href="./gallery.html" class="nav-link">Gallery</a>
+                    <a href="./blog.html" class="nav-link nav-link-ltr"><span>Blog</span></a>
                 </li>
                 <li class="nav-item navbar-text">
-                    <a href="./works.html" class="nav-link">Work</a>
+                    <a href="./gallery.html" class="nav-link nav-link-ltr">Projects</a>
                 </li>
                 <li class="nav-item navbar-text">
-                    <a href="./contact.html" class="nav-link">Contact me</a>
+                    <a href="./resume.html" class="nav-link nav-link-ltr">Resume</a>
                 </li>
-
             </ul>
         </div>
     </nav>
 
-    <div class="container text-center mt-5">
+    <div class="container text-center mt-5 body">
         <h1 class="text-black-50 font-weight-bold font-italic">Blogs</h1>
     </div>
    
-    <div class="container ">
+    <div class="container body">
 
         <div id="one_card" class="border-bottom m-lg-5">
             <a class="card-link " href="./blogs/what_is_blog.html">
@@ -129,47 +132,18 @@
     <!-- Footer -->
 
     <footer>
-        <div class="footer-top mt-5 pt-4 pb-4 bg-dark text-secondary ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col sm-6 col-xs-12 segment-one">
-                        <h3>lorem</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Doloremque, aperiam impedit? Dignissimos quam ipsa reprehenderit
-                            sunt itaque accusamus vitae ratione at eos! Quas, dolores.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-two">
-                        <h3>Explore</h3>
-                        <ul class="list-group list-group-flush bg-dark text-secondary">
-                            <li class="list-group-item bg-dark"><a class="text-secondary text-uppercase" href="./index.html">Home</a></li>
-                            <li class="list-group-item bg-dark"><a class="text-secondary text-uppercase" href="./blog.html">Blog</a></li>
-                            <li class="list-group-item bg-dark">
-                                <a class="text-secondary text-uppercase" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="list-group-item bg-dark">
-                                <a class="text-secondary text-uppercase" href="./contact.html">Contact me</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-three">
-                        <h3>Follow Us</h3>
-                        <p>
-                            Please follow me on my social Media and let's keep in touch.
-                        </p>
-                        <a href=""><i class="icon-music"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center pt-3 font-weight-bolder ">
-                Developed By Abenezer Atnafu &copy;
+        <div class="container">
+            <div class="site-footer">
+                <p class="powered-by text-center">
+                    LICENSE: Abenezer Atnafu <i class="fas fa-copyright"></i>
+                </p>
+                <p class="powered-by text-center">
+                    <i class="fas fa-copyright"></i> Abenezer Atnafu 2021 Made with bootstrap and custom css. 
+                    <span class="ml-2 " ><a href="#" class="bg-main"><i style="font-size: 2em;" class="fas fa-chevron-up"></i></a></span> 
+                </p>
             </div>
         </div>
     </footer>
-
 
 
 </body>
