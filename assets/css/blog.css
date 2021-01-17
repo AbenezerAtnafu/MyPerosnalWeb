@@ -11,16 +11,23 @@
 
 
 #main_body{
-    margin:5em 8em;
+    margin:2em 8em;
     padding-right: 2em;
 }
 
-#header{
-    margin-left: 5em;
-}
+
 h3{
     padding: 1em 0em;
 }
 p{
     padding-left: 1em;
+}
+
+#table_content{
+    margin: 2em 0em;
+    border-left: 1px solid #09bc8a3d;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    position: sticky;
 }

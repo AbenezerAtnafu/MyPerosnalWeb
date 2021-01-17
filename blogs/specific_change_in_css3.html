@@ -4,163 +4,186 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Specific Changes in CSS3 | Abenezer Atnafu</title>
-    <link rel="shortcut icon" href="../assets/icons/icon.svg" type="image/x-icon">
-    <link rel="shortcut icon" href="../assets/icons/icon.svg" type="image/x-icon">
-    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="../assets/icons/icon.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/bootstrap.css" />
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../assets/css/blog.css">
 </head>
 <body>
     
-    <nav id="navbar-main" class=" navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav id="navbar-main" class="navbar navbar-expand-md navbar-light sticky-top">
 
-        <div class="collapse navbar-collapse" id="colNav">
-            <a class="text-dark ml-5 text-uppercase font-weight-bolder border-bottom" href="../index.html">Abenezer Atnafu</a>
-            <ul class="navbar-nav ml-auto nav-pills">
-                <li class="nav-item navbar-text active">
-                    <a href="../blog.html" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item navbar-text">
-                    <a href="../gallery.html" class="nav-link">Gallery</a>
-                </li>
-                <li class="nav-item navbar-text">
-                    <a href="../works.html" class="nav-link">Work</a>
-                </li>
-                <li class="nav-item navbar-text">
-                    <a href="../contact.html" class="nav-link">Contact me</a>
-                </li>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#collapse_target">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="collapse_target">
+            <a class="text-dark ml-5 text-uppercase font-weight-bolder border-bottom" href="../index.html">Abenezer
+                Atnafu</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item navbar-text">
+                    <a href="../about.html" class="nav-link nav-link-ltr"><span>About</span></a>
+                </li>
+                <li class="nav-item navbar-text">
+                    <a href="../blog.html" class="nav-link nav-link-ltr"><span>Blog</span></a>
+                </li>
+                <li class="nav-item navbar-text">
+                    <a href="../gallery.html" class="nav-link nav-link-ltr">Projects</a>
+                </li>
+                <li class="nav-item navbar-text">
+                    <a href="../resume.html" class="nav-link nav-link-ltr">Resume</a>
+                </li>
             </ul>
         </div>
     </nav>
 
-
-    <!-- header -->
-    <div id="header" class="container-fluid">
-        <div class="row m-5">
-            <div class="col-6">
+    <!-- Header -->
+    <div  class="container-fluid">
+        <div class="p-3 w-75 m-auto">
+            <div class="">
                 <h1 class="modal-header">
                     Specific changes in CSS-3
                 </h1>
                 <h5 class="text-secondary">
                     Last updated 2 Days ago, 19 min
                 </h5>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item"><a href="#css_selectors">CSS3 Selectors</a></li>
-                    <li class="list-group-item"><a href="#css_colors">CSS3 Colors</a></li>
-                    <li class="list-group-item"><a href="#round_corners">Rounded Corners</a></li>
-                    <li class="list-group-item"><a href="#round_corners">Rounded Corners</a></li>
-                    <li class="list-group-item"><a href="#2d_3d_transformation">2D and 3D transformation</a></li>
-                    <li class="list-group-item"><a href="#faster_dev">Faster Development and faster load times</a></li>
-                    <li class="list-group-item"><a href="#drop_shadows">Drop Shadows and Text Shadow</a></li>
-                    <li class="list-group-item"><a href="#gradients">Linear and Radial Gradients</a></li>
-                </ul>
+                
             </div>
-            <div class="col-6 pl-5">
-                <img class="ml-5 w-50 h-75" src="../assets/images/CSS3_logo.png" alt="css3 image"></a>
+            <div class="w-50 m-auto">
+                <img class="w-75" src="../assets/images/CSS3_logo.png"
+                 alt="css3 image"></a>
 
             </div>
         </div>
     </div>
 
-    <!-- Main body -->
-    <div class="container">
-        <div id="main_body">
-            <div class="content">
-            <h3 class="text-secondary card-title" >What is CSS?</h3 >
-            <p>CSS is the abbervation of Cascading Style Sheet which is a simple mechanism for adding styles
-                in a given and linked HTML file. For example: fonts, colors, backgrounds e.t.c.
-            </p>
-            <p>
-                CSS3 is the latest evolution of CSS which is the new version of CSS2.
-            </p>
-
-            <p id="css_selectors">
-                <h3 class="text-secondary card-title">1. CSS3 Selectors</h3 >
-                <p>
-                    In addition to CSS2, CSS3 they allow for substring selection. We can use some REGEX 
-                    for matching any element. <br> For example: using &quot;*&quot; for selecting an element
-                     with the requirement is satisfied anywhere in the element.
-                </p><br>
-                <p>
-                    Pseudo-classes: a few more pseudo-classes were added. Some are:-
-                    <ul>
-                        <li>:root - to point the root element of the document.</li>
-                        <li>:last-child - to select the last element of the parent element</li>
-                        <li>:none - can be coupled with almost any other selector and used to get a element 
-                            with negative style.
-                        </li>
-                    </ul>
-                </p>
-
-            </p>
-            <p id="css_colors">
-                <h3 class="text-secondary card-title">2. CSS3 Colors</h3 >
-                <p>
-                    The most notable change with these new color types is <strong>the ability to declare
-                        semitransparent colors.
-                    </strong>
-                </p>
-                <p>
-                    <ul>
-                        <li> <strong>RGBA: </strong> the fourth value or the alpha declares the opacity value which 
-                            ranges between 1 and 0</li>
-                        <li><strong>Opacity: </strong> it sets the opaqueness of the element.</li>
-                    </ul>
-                </p>
-                
-            </p>
-            <p id="round_corners">
-                <h3 class="text-secondary card-title">3. Rounded Corners</h3 >
-                <p>
-                    This property lets you to create rounded corners without any another markup elements. 
-                </p><br>
-                <p>
-                    For example: border-radius: 25px;
-                </p>
-                <a href="https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1">Read more...</a>
-            </p>
-            <p id="2d_3d_transformation">
-                <h3 class="text-secondary card-title">4. 2D and 3D transformation</h3 >
-                <p>
-                    These effects allow elements on a page to rotate, grow, shrink, flip or translate into 
-                    different color or size. It appears without requiring any Javascript or flash code.
-                </p><br>
-            </p>
-            <p id="faster_dev">
-                <h3 class="text-secondary card-title">5. Faster Development and faster load times</h3 >
-                <p>
-                    CSS3 can niw achieve faster production time with visual enhancements. This cuts down on 
-                    calls and load times for numerous images because these effect ar all built into the code.
-                </p><br>
-                <a href="https://www.upwork.com/hiring/development/css-vs-css3/">Read more...</a>
-            </p>
-            <p id="drop_shadows">
-                <h3 class="text-secondary card-title">6. Drop Shadows and Text Shadow</h3 >
-                <p>
-                    CSS3 provides the ability to add drop shadows to elements using the &quot;box-shadow&quot;
-                     property. This property lets you to specify the color, height, width, blur ...
-                </p><br>
-                <p>
-                    Text shadow adds shadodws to individual characters in text nodes using the &quot;text-shadow&quot;
-                    property.
-                </p><br>
-            </p>
-            <p id="gradients">
-                <h3 class="text-secondary card-title">7. Linear and Radial Gradients</h3 >
-                <p>
-                    CSS3 provides the ability for generating linear and radial gradients. Radial gradients are circular
-                     or elliptical gradients while linear gradient are straight lines. 
-                </p><br>
-                <p>
-                    Text shadow adds shadodws to individual characters in text nodes using the &quot;text-shadow&quot;
-                    property.
-                </p><br>
-                <a href="https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1">Read more...</a>
-                </p>
-            </p>
-            
+    <div class="row">
+        <div class="col-12 col-lg-8 col-sm-10 col-9">
+            <div class="container">
+                <div id="main_body">
+                    <div class="content">
+                    <h3 class="text-secondary card-title" >What is CSS?</h3 >
+                    <p>CSS is the abbervation of Cascading Style Sheet which is a simple mechanism for adding styles
+                        in a given and linked HTML file. For example: fonts, colors, backgrounds e.t.c.
+                    </p>
+                    <p>
+                        CSS3 is the latest evolution of CSS which is the new version of CSS2.
+                    </p>
+        
+                    <p id="css_selectors">
+                        <h3 class="text-secondary card-title">1. CSS3 Selectors</h3 >
+                        <p>
+                            In addition to CSS2, CSS3 they allow for substring selection. We can use some REGEX 
+                            for matching any element. <br> For example: using &quot;*&quot; for selecting an element
+                             with the requirement is satisfied anywhere in the element.
+                        </p><br>
+                        <p>
+                            Pseudo-classes: a few more pseudo-classes were added. Some are:-
+                            <ul>
+                                <li>:root - to point the root element of the document.</li>
+                                <li>:last-child - to select the last element of the parent element</li>
+                                <li>:none - can be coupled with almost any other selector and used to get a element 
+                                    with negative style.
+                                </li>
+                            </ul>
+                        </p>
+        
+                    </p>
+                    <p id="css_colors">
+                        <h3 class="text-secondary card-title">2. CSS3 Colors</h3 >
+                        <p>
+                            The most notable change with these new color types is <strong>the ability to declare
+                                semitransparent colors.
+                            </strong>
+                        </p>
+                        <p>
+                            <ul>
+                                <li> <strong>RGBA: </strong> the fourth value or the alpha declares the opacity value which 
+                                    ranges between 1 and 0</li>
+                                <li><strong>Opacity: </strong> it sets the opaqueness of the element.</li>
+                            </ul>
+                        </p>
+                        
+                    </p>
+                    <p id="round_corners">
+                        <h3 class="text-secondary card-title">3. Rounded Corners</h3 >
+                        <p>
+                            This property lets you to create rounded corners without any another markup elements. 
+                        </p><br>
+                        <p>
+                            For example: border-radius: 25px;
+                        </p>
+                        <a href="https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1">Read more...</a>
+                    </p>
+                    <p id="2d_3d_transformation">
+                        <h3 class="text-secondary card-title">4. 2D and 3D transformation</h3 >
+                        <p>
+                            These effects allow elements on a page to rotate, grow, shrink, flip or translate into 
+                            different color or size. It appears without requiring any Javascript or flash code.
+                        </p><br>
+                    </p>
+                    <p id="faster_dev">
+                        <h3 class="text-secondary card-title">5. Faster Development and faster load times</h3 >
+                        <p>
+                            CSS3 can niw achieve faster production time with visual enhancements. This cuts down on 
+                            calls and load times for numerous images because these effect ar all built into the code.
+                        </p><br>
+                        <a href="https://www.upwork.com/hiring/development/css-vs-css3/">Read more...</a>
+                    </p>
+                    <p id="drop_shadows">
+                        <h3 class="text-secondary card-title">6. Drop Shadows and Text Shadow</h3 >
+                        <p>
+                            CSS3 provides the ability to add drop shadows to elements using the &quot;box-shadow&quot;
+                             property. This property lets you to specify the color, height, width, blur ...
+                        </p><br>
+                        <p>
+                            Text shadow adds shadodws to individual characters in text nodes using the &quot;text-shadow&quot;
+                            property.
+                        </p><br>
+                    </p>
+                    <p id="gradients">
+                        <h3 class="text-secondary card-title">7. Linear and Radial Gradients</h3 >
+                        <p>
+                            CSS3 provides the ability for generating linear and radial gradients. Radial gradients are circular
+                             or elliptical gradients while linear gradient are straight lines. 
+                        </p><br>
+                        <p>
+                            Text shadow adds shadodws to individual characters in text nodes using the &quot;text-shadow&quot;
+                            property.
+                        </p><br>
+                        <a href="https://medium.com/beginners-guide-to-mobile-web-development/whats-new-in-css-3-dcd7fa6122e1">Read more...</a>
+                        </p>
+                    </p>
+                    
+                    </div>
+                </div>
             </div>
         </div>
+        <div class="col-12 col-lg-4 col-sm-2 col-md-3">
+            <div class="container">
+                Contents
+                <nav class="nav flex-column" id="table_content">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a href="#css_selectors" class="nav-link">CSS3 Selectors</a></li>
+                        <li class="nav-item"><a href="#css_colors" class="nav-link">CSS3 Colors</a></li>
+                        <li class="nav-item"><a href="#round_corners" class="nav-link">Rounded Corners</a></li>
+                        <li class="nav-item"><a href="#round_corners" class="nav-link">Rounded Corners</a></li>
+                        <li class="nav-item"><a href="#2d_3d_transformation" class="nav-link">2D and 3D transformation</a></li>
+                        <li class="nav-item"><a href="#faster_dev" class="nav-link">Faster Development and faster load times</a></li>
+                        <li class="nav-item"><a href="#drop_shadows" class="nav-link">Drop Shadows and Text Shadow</a></li>
+                        <li class="nav-item"><a href="#gradients" class="nav-link">Linear and Radial Gradients</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Main body -->
+    <div class="container">
         <div class="col-12 row ml-5">
             <div class="col-4"></div>
             <div class="col-4 row">
@@ -190,47 +213,28 @@
         
 <!-- Footer -->
 
-    <footer>
-        <div class="footer-top mt-5 pt-4 pb-4 bg-dark text-secondary ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4 col sm-6 col-xs-12 segment-one">
-                        <h3>lorem</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Doloremque, aperiam impedit? Dignissimos quam ipsa reprehenderit
-                            sunt itaque accusamus vitae ratione at eos! Quas, dolores.
-                        </p>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-two">
-                        <h3>Explore</h3>
-                        <ul class="list-group list-group-flush bg-dark text-secondary">
-                            <li class="list-group-item bg-dark"><a class="text-secondary text-uppercase" href="./index.html">Home</a></li>
-                            <li class="list-group-item bg-dark"><a class="text-secondary text-uppercase" href="./blog.html">Blog</a></li>
-                            <li class="list-group-item bg-dark">
-                                <a class="text-secondary text-uppercase" href="./gallery.html">Gallery</a>
-                            </li>
-                            <li class="list-group-item bg-dark">
-                                <a class="text-secondary text-uppercase" href="./contact.html">Contact me</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6 col-xs-12 segment-three">
-                        <h3>Follow Us</h3>
-                        <p>
-                            Please follow me on my social Media and let's keep in touch.
-                        </p>
-                        <a href=""><i class="icon-music"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="text-center pt-3 font-weight-bolder ">
-                Developed By Abenezer Atnafu &copy;
-            </div>
+<footer>
+    <div class="container">
+        <div class="site-footer">
+            <p class="powered-by text-center">
+                LICENSE: Abenezer Atnafu <i class="fas fa-copyright"></i>
+            </p>
+            <p class="powered-by text-center">
+                <i class="fas fa-copyright"></i> Abenezer Atnafu 2021 Made with bootstrap and custom css. 
+                <span class="ml-2 " ><a href="#" class="bg-main"><i style="font-size: 2em;" class="fas fa-chevron-up"></i></a></span> 
+            </p>
         </div>
-    </footer>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 
 
