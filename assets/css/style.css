@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
 }
-*::after {
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
@@ -131,4 +131,74 @@ a {
 
 .btn .btn-outline-primary:hover{
     background-color: #06805e;
+}
+
+
+
+/* tab */
+
+#tablist .nav-item{
+    background-color: #07805F;
+    padding: 0;
+    width: 80px;
+    text-align: center;
+    
+}
+#tablist .nav-link{
+    padding: 0;
+    color: #FFF;
+    text-transform: lowercase;   
+    margin: 0; 
+    width: 100%;
+    height: 100%;
+}
+
+#tablist .nav-link:hover{
+    border:none;
+    background-color: #08b182; 
+    border-radius: 0;
+}
+
+#tablist .nav-item .active {
+    border:none;
+    background-color: #05503B;
+    border-radius: 0;
+}
+
+/* tab panes */
+.grid-item {
+    width: 310px;
+    padding: 8px;
+}
+
+.project-container{
+    transition: .2s all ease-out;
+    cursor: pointer;
+}
+
+.card-head{
+    background-image: url("../images/link.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .2s ease-out;
+}
+
+.project-container:hover .card-img-top{
+    box-shadow: 6px 6px 40px 10px rgb(212, 209, 219);
+    opacity: 0.4;
+    transition: all .2s ease-out;
+}
+
+.project-container:hover{
+    box-shadow: 6px 6px 40px 10px rgb(212, 209, 219);
+}
+
+.card h4 a {
+    color: #000;
+}
+
+.card h4 a:hover{
+    color: #000;
+    border-bottom: solid 3px transparent;
 }
