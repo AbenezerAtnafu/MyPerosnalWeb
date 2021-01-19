@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +10,25 @@
 
 .body{
     background-color:#F0F7FA;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Karla', sans-serif;
+    font-weight: bold;
+    color: #004346;
+}
+
+h1, h2,h3,h4,h5,h6{
+    font-family: lora,sans-serif;
+}
+
+.date{
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    text-align: left;
+}
+
+.see_all{
+    font-family: "Karla", sans-serif;
+    font-size: 14px;
+    text-align: left;
 }
 
 .basic_title {
@@ -99,14 +119,14 @@ a {
 
 #img_container .card-img:hover {
     filter: none;
-    transform: scale(1.1);
 }
 #img_container:hover {
     filter: none;
-    transform: scale(1.1);
 }
 
-
+#one_card:hover .card-img{
+    filter: none;
+}
 #img_container {
     
     align-items: center;
@@ -272,4 +292,24 @@ a {
     width: 500px;
     border-radius: 8px;
     position: relative;
+}
+
+/* item-carousel */
+
+.item-carousel{
+    max-width: 700px;
+    text-align: left;
+    padding: 18px;
+    margin: 7.5rem 8rem;
+}
+
+.item-carousel p{
+    color: #08b182;
+    font-size: 2.7rem;   
+}  
+
+.date{
+    font-family: "Karla", sans-serif;
+    font-size: 16.8px;
+
 }
